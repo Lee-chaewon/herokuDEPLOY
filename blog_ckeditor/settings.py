@@ -129,5 +129,5 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 
 import dj_database_url
 
-    db_from_env = dj_database_url.config(conn_max_age=500)
-    DATABASES['default'].update(db_from_env)
+db_from_env = dj_database_url.config(conn_max_age=500)
+DATABASES['default'].update(db_from_env)
